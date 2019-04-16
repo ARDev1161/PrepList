@@ -21,19 +21,27 @@
 		<role-name>User</role-name>
 	</security-role>
 
+	<security-role>
+		<role-name>User</role-name>
+	</security-role>
+
+	<security-role>
+		<role-name>User</role-name>
+	</security-role>
+
 	<login-config>
 		<auth-method>FORM</auth-method>
 
 		<form-login-config>
-			<form-login-page>/JSP/login.jsp</form-login-page>
-			<form-error-page>/JSP/login_fail.jsp</form-error-page>
+			<form-login-page>/pages/login.jsp</form-login-page>
+			<form-error-page>/pages/login_fail.jsp</form-error-page>
 		</form-login-config>
 	</login-config>
 
 	<!-- Login servlet -->
 	<servlet>
 		<servlet-name>Login</servlet-name>
-		<servlet-class>com.PrepList.servlets.Login</servlet-class>
+		<servlet-class>com.PrepList.servlets.security.Login</servlet-class>
 	</servlet>
 
 	<servlet-mapping>
@@ -44,7 +52,7 @@
 	<!-- Register servlet -->
 	<servlet>
 		<servlet-name>Register</servlet-name>
-		<servlet-class>com.PrepList.servlets.Register</servlet-class>
+		<servlet-class>com.PrepList.servlets.security.Register</servlet-class>
 	</servlet>
 
 	<servlet-mapping>
@@ -55,7 +63,7 @@
 	<!-- List servlet -->
 	<servlet>
 		<servlet-name>List</servlet-name>
-		<servlet-class>com.PrepList.servlets.List</servlet-class>
+		<servlet-class>com.PrepList.servlets.data.List</servlet-class>
 	</servlet>
 
 	<servlet-mapping>

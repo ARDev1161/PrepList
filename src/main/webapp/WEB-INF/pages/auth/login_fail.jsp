@@ -4,11 +4,10 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>Login failed</title>
 </head>
 <body>
- 
-You are not valid user
- 
+Invalid username and/or password, please try
+<a href='<%= response.encodeURL("index.jsp") %>'>again</a>.
 </body>
 </html>

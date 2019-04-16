@@ -1,4 +1,4 @@
-package com.PrepList.servlets;
+package com.PrepList.servlets.security;
 
 import javax.servlet.http.HttpServlet;
 

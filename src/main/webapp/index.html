@@ -10,11 +10,23 @@
         <h1>PrepList</h1>
     </div>
 
-    <div>       <!-- content -->
+    <!-- Give Servlet reference to the form as an instances
+    GET and POST services can be according to the problem statement-->
+    <form action="./login" method="post">
+        <p>User:</p>
+        <!-- Create an element with mandatory name attribute,
+        so that data can be transfer to the servlet using getParameter() -->
+        <input type="text" name="user"/>
+        <br/>
+        <p>Pass:</p>
+        <input type="password" name="pass"/>
+        <br/><br/><br/>
+
         <div>    <!-- buttons holder -->
             <button onclick="location.href='pages/auth/login'">Login</button>
             <button onclick="location.href='pages/auth/register'">Register</button>
         </div>
-    </div>
+    </form>
+
 </body>
 </html>
