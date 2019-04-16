@@ -18,7 +18,7 @@
           <td align="left"><input type="password" name="j_password"></td>
         </tr>
         <tr>
-          <td align="right"><input type="submit" value="Log In"></td>
+          <td align="right"><input type="submit" value="Login"></td>
           <td align="left"><input type="reset"></td>
         </tr>
       </table>

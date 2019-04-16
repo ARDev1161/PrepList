@@ -8,12 +8,13 @@
 
 	<security-constraint>
 		<web-resource-collection>
-			<web-resource-name>Auth</web-resource-name>
+			<web-resource-name>secured</web-resource-name>
 			<url-pattern>/protected/*</url-pattern>
 		</web-resource-collection>
 
 		<auth-constraint>
 			<role-name>User</role-name>
+			<role-name>Admin</role-name>
 		</auth-constraint>
 	</security-constraint>
 
@@ -22,19 +23,15 @@
 	</security-role>
 
 	<security-role>
-		<role-name>User</role-name>
-	</security-role>
-
-	<security-role>
-		<role-name>User</role-name>
+		<role-name>Admin</role-name>
 	</security-role>
 
 	<login-config>
 		<auth-method>FORM</auth-method>
 
 		<form-login-config>
-			<form-login-page>/pages/login.jsp</form-login-page>
-			<form-error-page>/pages/login_fail.jsp</form-error-page>
+			<form-login-page>/auth/login.jsp</form-login-page>
+			<form-error-page>/auth/login_fail.jsp</form-error-page>
 		</form-login-config>
 	</login-config>
 
