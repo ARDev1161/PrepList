@@ -40,4 +40,5 @@ public class GroupSubjectIpml implements GroupSubjectService {
     public List<GroupSubject> getAll() {
         return groupSubjectRepository.findAll();
     }
+
 }
